@@ -1,0 +1,9 @@
+node_modules/
+*.log
+.git/
+.gitignore
+.dockerignore
+.DS_Store
+coverage/
+test.sh
+README.md
