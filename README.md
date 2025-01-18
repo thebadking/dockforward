@@ -12,6 +12,13 @@ A tool for seamlessly working with Docker on remote hosts. It provides port forw
 - Respects .gitignore and .dockerignore files
 - Automatic cleanup of old context directories
 
+## Why Use This?
+
+### macOS-specific Benefits
+- **Architecture Independence**: Resolves common arm64 architecture issues in Mac development by executing Docker commands on remote Linux hosts
+- **Space Efficiency**: Eliminates the need for Docker Desktop's large VM footprint (64GB+) on Mac systems with limited storage
+- **Native Performance**: By offloading Docker operations to remote Linux hosts, you get native Docker performance without the overhead of virtualization
+
 <img width="757" alt="image" src="https://github.com/user-attachments/assets/f857d6fd-b2a7-4291-a823-d81ade0817f6" />
 
 ## Installation
