@@ -12,6 +12,9 @@ A tool for seamlessly working with Docker on remote hosts. It provides port forw
 - Respects .gitignore and .dockerignore files
 - Automatic cleanup of old context directories
 
+<img width="741" alt="image" src="https://github.com/user-attachments/assets/779ce39d-16d2-4e38-a0d9-3a58b85ea103" />
+
+
 ## Installation
 
 ### Prerequisites
