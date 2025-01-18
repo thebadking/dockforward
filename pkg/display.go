@@ -250,7 +250,7 @@ func (d *DisplayManager) colorizeStatus(status string) string {
 	case StatusConflict, StatusError:
 		return ColorRed + status + ColorReset
 	case StatusReady:
-		return ColorYellow + status + ColorReset
+		return ColorGreen + status + ColorReset
 	default:
 		return status
 	}

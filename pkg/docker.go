@@ -113,6 +113,14 @@ func (d *DockerClient) GetServices() (map[string]*ServiceStatus, error) {
 		}
 	}
 
+	// Update the internal services map
+	d.UpdateServices(services)
+
+	// Update forwarding status to check for conflicts
+	if err := d.UpdateForwardingStatus(); err != nil {
+		log.Printf("Failed to update forwarding status: %v", err)
+	}
+
 	return services, nil
 }
 
