@@ -128,14 +128,6 @@ To uninstall:
 make uninstall
 ```
 
-Server Setup:
-expose the api port for the monitor service to work correctly
-
-sudo nano /lib/systemd/system/docker.service
-and modify this line:
-#ExecStart=/usr/bin/dockerd -H fd:// --containerd=/run/containerd/containerd.sock
-ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:51575 --containerd=/run/containerd/containerd.sock
-
 ## Usage
 
 1. Start the monitor and configure your first remote server:
